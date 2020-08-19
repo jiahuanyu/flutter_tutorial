@@ -1,5 +1,4 @@
 import 'package:faceboot_flutter/config/palette.dart';
-import 'package:faceboot_flutter/data/data.dart';
 import 'package:faceboot_flutter/models/models.dart';
 import 'package:faceboot_flutter/widget/profile_avatar.dart';
 import 'package:flutter/material.dart';

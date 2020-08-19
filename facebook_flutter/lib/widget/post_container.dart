@@ -225,6 +225,7 @@ class _PostButton extends StatelessWidget {
             height: 25.0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 icon,
                 const SizedBox(width: 4.0),
