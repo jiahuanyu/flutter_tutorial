@@ -38,7 +38,7 @@ class _NavScreenState extends State<NavScreen> {
       child: Scaffold(
         appBar: Responsive.isDesktop(context)
             ? PreferredSize(
-                preferredSize: Size(screenSize.width, 100.0),
+                preferredSize: Size(screenSize.width, kToolbarHeight),
                 child: CustomAppBar(
                   currentUser: currentUser,
                   icons: _icons,

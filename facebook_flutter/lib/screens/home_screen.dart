@@ -58,7 +58,6 @@ class _HomeScreenMobile extends StatelessWidget {
         ),
         SliverToBoxAdapter(
           child: Container(
-            color: Colors.red,
             child: CreatePostContainer(
               currentUser: currentUser,
             ),
