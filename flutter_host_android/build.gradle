@@ -22,7 +22,7 @@ allprojects {
             url '/Users/abbott/WorkSpace/xingren/flutter_tutorial/flutter_module/build/host/outputs/repo'
         }
         maven {
-            url 'http://download.flutter.io'
+            url 'https://storage.flutter-io.cn/download.flutter.io'
         }
     }
 }
