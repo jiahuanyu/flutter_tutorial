@@ -14,8 +14,17 @@ class CountPageBloc extends Bloc<CountPageEvent, int> {
   ) async* {
     if (event is CountPageAddEvent) {
       yield state + 1;
+
+      yield* _test();
+
+      yield state + 1;
     } else if (event is CountPageMinusEvent) {
       yield state - 1;
     }
+  }
+
+  Stream<int> _test() async* {
+    await Future.delayed(Duration(seconds: 5));
+    yield 10;
   }
 }

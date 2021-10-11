@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CountPage extends StatelessWidget {
-  CountPage({Key key, this.title}) : super(key: key);
-
   final String title;
+
+  CountPage({Key? key, required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,8 @@ class CountPage extends StatelessWidget {
           children: <Widget>[
             RaisedButton(
               onPressed: () {
-                context.bloc<CountPageBloc>().add(CountPageMinusEvent());
+                BlocProvider.of<CountPageBloc>(context)
+                    .add(CountPageMinusEvent());
               },
               child: Text("Test"),
             ),
@@ -61,7 +62,7 @@ class CountPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          context.bloc<CountPageBloc>().add(CountPageAddEvent());
+          BlocProvider.of<CountPageBloc>(context).add(CountPageAddEvent());
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),
